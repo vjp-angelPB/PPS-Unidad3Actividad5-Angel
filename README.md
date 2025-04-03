@@ -4,10 +4,10 @@ Explotación y Mitigación de Cross-Site Scripting (XSS)
 
 Objetivos:
 
-> Investigr cómo se pueden realizar ataques de Cross-Site Scripting (XSS)
-> Conocer las diversas formas de ataque XSS
-> Analizar el código de la aplicación que permite ataques de Cross-Site Scripting (XSS)
-> Implementar diferentes modificaciones del código para aplicar mitigaciones o soluciones.
+* Investigr cómo se pueden realizar ataques de Cross-Site Scripting (XSS)
+* Conocer las diversas formas de ataque XSS
+* Analizar el código de la aplicación que permite ataques de Cross-Site Scripting (XSS)
+* Implementar diferentes modificaciones del código para aplicar mitigaciones o soluciones.
 
 ---
 
