@@ -58,6 +58,7 @@ En el momento en que el usuario envía el formulario, el comentario introducido 
 
 El Código no sanitiza la entrada del usuario, lo que permite inyectar scripts maliciosos.
 
+![](Images/img10.png)
 
 ### **Explotación de XSS**
 ---
@@ -73,8 +74,7 @@ Ingresar el siguiente código en el formulario:
 
 Si aparece un mensaje de alerta (alert()) en el navegador, significa que la aplicación es vulnerable.
 
-![](Images/img3.png)
-
+![](Images/img11.png)
 
 **Explotación 2**
 
@@ -82,7 +82,7 @@ Podríamos redirigir a una página de phishing:
 
 `<script>window.location='https://fakeupdate.net/win11/'</script>`
 
-
+![](Images/img12.png)
 
 **Capturar cookies del usuario (en ataques reales):**
 ---
