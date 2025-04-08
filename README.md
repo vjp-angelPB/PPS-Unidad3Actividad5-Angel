@@ -30,6 +30,7 @@ Tipos de XSS:
  
 * También y como marco de referencia, tienes [ la sección de correspondiente de ataque XSS reglejado de la **Proyecto Web Security Testing Guide** (WSTG) del proyecto **OWASP**.](https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/07-Input_Validation_Testing/01-Testing_for_Reflected_Cross_Site_Scripting).
 
+![](Images/img1.png)
 
 --- 
 
@@ -55,7 +56,6 @@ En el momento en que el usuario envía el formulario, el comentario introducido 
 
 El Código no sanitiza la entrada del usuario, lo que permite inyectar scripts maliciosos.
 
-![](images/xss1.png)
 
 ### **Explotación de XSS**
 ---
@@ -71,7 +71,8 @@ Ingresar el siguiente código en el formulario:
 
 Si aparece un mensaje de alerta (alert()) en el navegador, significa que la aplicación es vulnerable.
 
-![](images/xss2.png)
+![](Images/img3.png)
+
 
 **Explotación 2**
 
@@ -79,7 +80,6 @@ Podríamos redirigir a una página de phishing:
 
 `<script>window.location='https://fakeupdate.net/win11/'</script>`
 
-![](images/xss3.png)
 
 
 **Capturar cookies del usuario (en ataques reales):**
@@ -208,7 +208,8 @@ if (!empty($comment) && strlen($comment) <= 500) {
 
 Evita comentarios vacíos o excesivamente largos (500 caracteres).
 
-![](files/xss6.png)
+![](Images/img4.png)
+
 
 **Protección contra inyecciones HTML y JS (XSS)**
 ---
